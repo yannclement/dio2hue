@@ -21,24 +21,24 @@ hue_bridge_address = "http://192.168.1.15/api/"
 # specify /api in URL and {"devicetype": "dio2hue"} in Message Body
 # press the button on the bridge and then press the POST button
 # retrieve the identifier in "username" and copy it into the hue_bridge_identification variable
-hue_bridge_identification = "jsRzlpW6eyRzPk6D8Wd5wRJ6KYXlrt1uVIzYsQd9"
+hue_bridge_identification = "abCdleF2ghIjKl3M4Op5rST6UVW7xy8zABcDeFg9"
 
 # list of known DiO transmitters
 # to retrieve parameters from a transmitter, use the scan option
 # python dio2hue.py scan
 dio_devices_list = {
 # DIO ID:{ ...parameters... }
-"ss1":{ "description":"simple switch", "house":"5254806", "group":"0", "unit":"1" },
-"ds0_o":{"description":"door switch when open", "house":"13162662", "group":"0", "unit":"0" },
-"ds1_c":{ "description":"door switch when closed", "house":"21794186", "group":"0", "unit":"0" },
-"ds1_r":{ "description":"double switch (right)", "house":"8136322", "group":"0", "unit":"1" },
-"ds1_l":{ "description":"double switch (left)", "house":"8136322", "group":"0", "unit":"2" },
+"ss1":{ "description":"simple switch", "house":"1234567", "group":"0", "unit":"1" },
+"ds0_o":{"description":"door switch when open", "house":"9876543", "group":"0", "unit":"0" },
+"ds1_c":{ "description":"door switch when closed", "house":"1234567", "group":"0", "unit":"0" },
+"ds1_r":{ "description":"double switch (right)", "house":"1122334", "group":"0", "unit":"1" },
+"ds1_l":{ "description":"double switch (left)", "house":"1122334", "group":"0", "unit":"2" },
 
-"1":{ "description":"remote", "house":"5121478", "group":"0", "unit":"1" },
-"2":{ "description":"remote", "house":"5121478", "group":"0", "unit":"2" },
-"13":{ "description":"remote", "house":"5121478", "group":"0", "unit":"13" },
+"1":{ "description":"remote", "house":"9988771", "group":"0", "unit":"1" },
+"2":{ "description":"remote", "house":"9988771", "group":"0", "unit":"2" },
+"13":{ "description":"remote", "house":"9988771", "group":"0", "unit":"13" },
 
-"g":{ "description":"remote", "house":"5121478", "group":"1", "unit":"1" },
+"g":{ "description":"remote", "house":"9988771", "group":"1", "unit":"1" },
 }
 
 # list of Hue lights with several possible parameters (ambiences) for each
