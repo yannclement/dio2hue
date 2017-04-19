@@ -1,12 +1,12 @@
 # dio2hue
-Gateway for controlling Hue lamps (http://www2.meethue.com) with DiO Chacon transmitters (HomeEasy 433Mhz home automation, go to https://getdio.com).
+<h2>Gateway for controlling Hue lamps (http://www2.meethue.com) with DiO Chacon transmitters (HomeEasy 433Mhz home automation, go to https://getdio.com).</h2>
 
 This Python program requires a TellStick Duo (http://telldus.se/produkt/tellstick-duo/) to receive commands from the Chacons emitters.
 
 The TellStick listens for every ON / OFF command sent. If an order comes from a known transmitter in the <code>dio_devices_list</code> list, we research the correspondence with a Hue lamps in <code>correspondences_table</code> variable.
 
 To complete your list of known transmitters, start the program with the parameter "scan":
-<code>python dio2hue scan</code>
+<code>python dio2hue.py scan</code>
 
 Activate each transmitter to know it's parameters and fill in the variable <code>dio_devices_list</code>.
 
@@ -20,7 +20,7 @@ First of all, you must have identified the program with your Hue Bridge, for thi
 - configure your Hue bridge with a static IP (http://notsealed.com/how-to-set-static-philips-hue-bridge-ip-address-fix.html),
 - enter in the variable <code>hue_bridge_address</code> the address permitting access to the API of your Hue bridge,
 - go to http://[your Hue bridge IP]/debug/clip.html ,
-- specify /api in URL and {"devicetype": "dio2hue"} in Message Body,
+- specify <code>/api</code> in URL and <code>{"devicetype": "dio2hue"}</code> in Message Body,
 - press the button on the bridge and then press the POST button,
 - retrieve the identifier in "username" and copy it into the <code>hue_bridge_identification</code> variable.
 
